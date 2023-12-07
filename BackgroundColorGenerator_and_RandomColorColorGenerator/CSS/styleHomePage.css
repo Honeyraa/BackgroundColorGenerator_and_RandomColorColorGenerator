@@ -1,0 +1,75 @@
+/* ************************************ Home page CSS ************************* */
+/* Navbar Css */
+.bg-img {
+    min-height: 80px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Needed to position the navbar */
+    position: relative;
+  }
+  
+  /* Position the navbar container inside the image */
+  .container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+    align-items: center;
+  }
+
+  /* The navbar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    align-self: center;
+  }
+  
+  /* Navbar links */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+
+
+
+
+  /*****************************************newCSS***************************************/
+
+  /* CSS file */
+.navbar {
+  position: fixed; /* Make the navbar fixed */
+  top: 0; /* Position the navbar at the top */
+  width: 100%; /* Make the navbar span the whole width */
+  background-color: #333; /* Set the background color */
+}
+
+.navbar a {
+  display: inline-block; /* Make the links inline */
+  color: white; /* Set the text color */
+  padding: 14px 16px; /* Add some padding */
+  text-decoration: none; /* Remove the underline */
+}
+
+.navbar a:hover {
+  background-color: #ddd; /* Change the background color on hover */
+  color: black; /* Change the text color on hover */
+}
+
+#content {
+  margin-top: 10px; /* Add some space below the navbar */
+  background-color: burlywood;
+  width: 100px;
+}

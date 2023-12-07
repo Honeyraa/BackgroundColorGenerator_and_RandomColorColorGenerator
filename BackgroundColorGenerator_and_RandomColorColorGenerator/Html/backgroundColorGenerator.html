@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+                Color Code Generator.
+        </title>
+        <link rel="stylesheet" href="../CSS/styleBackgroundColorGenerator.css">
+        
+    </head>
+    <body id="bodybg">
+        <div id="centerdiv">
+            <h1>BACKGROUND COLOR GENERATOR</h1>
+            <br>
+            <br>
+            <h2> PICK THE COLOR </h2>
+            <br>
+            <br>
+            <input type="color" name="" id="color1" value="#ff0000">
+            <input type="color" name="" id="color2" value="#ffff00">
+            <br>
+            <br>
+            <h3 id="showCode"> </h3>
+        </div>
+
+        <!-- adding javascript-->
+        <script>
+            const color1 = document.getElementById('color1');
+            const color2 = document.getElementById('color2');
+            const bodybg = document.getElementById('bodybg');
+            const showColorCode = document.getElementById('showCode');
+
+            //Do not repeat your code
+            function setbgcolour()
+            {
+                bodybg.style.background = `linear-gradient(to right,${color1.value},${color2.value})`;
+
+                showColorCode.textContent = `The color code is : linear-gradient(to right,${color1.value},${color2.value})` ;
+            }
+            color1.addEventListener('input',setbgcolour);
+            color2.addEventListener('input',setbgcolour);
+
+        </script>
+    </body>
+
+<!--Done 02-11-2023 23.08p.m.-->
+</html>

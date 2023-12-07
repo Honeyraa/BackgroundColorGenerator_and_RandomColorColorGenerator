@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>
+      HOME PAGE
+    </title>
+    <link rel="stylesheet" href="../CSS/styleHomePage.css">
+    <script>
+        function loadContent(page) {
+          // Get the element with id "content"
+          var content = document.getElementById("content");
+
+          // Set the inner HTML of the content element to the response text
+          if(page == 'Page1')
+          {
+            
+            content.innerHTML = "<iframe width=1500px height=600px src='backgroundColorGenerator.html'></iframe>" ;
+
+          }
+          else if(page =='Page2'){
+            
+            content.innerHTML = "<iframe width=1500px height=600px src='randomColorCodeGenerator.html'></iframe>";
+          }
+          else{
+            content.innerHTML= "<iframe width=1500px height=600px src='HomePage.html'></iframe>"
+          }
+        }
+    </script>
+  </head>
+  <body>
+    
+    <div class="bg-img">
+      <div class="container">
+        <div class="topnav">  
+          <a href="#" onclick="loadContent('Page1')">Generate Background Colours</a>
+          <a href="#" onclick="loadContent('Page2')">Generate Random Colour Codes</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="content">
+      <!-- This is where the new content will be loaded-->
+    </div>
+
+  </body>
+</html>
